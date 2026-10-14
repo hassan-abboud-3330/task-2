@@ -28,7 +28,7 @@ git clone https://github.com/hassan-abboud-3330/task-2.git
 ### 2. Navigate to the project directory
 
 ```bash
-cd littel-learners
+cd academy-landing-page
 ```
 
 ### 3. Install dependencies
