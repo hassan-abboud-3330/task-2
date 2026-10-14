@@ -1,0 +1,21 @@
+.layout {
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding: 80px 16px;
+}
+
+/* ==========
+  responsive
+*/
+@media (min-width: 768px) {
+  .layout {
+    padding: 16px 50px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .layout {
+    padding: 18px 51px;
+  }
+}

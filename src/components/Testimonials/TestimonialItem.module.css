@@ -1,0 +1,42 @@
+.container {
+  align-self: stretch;
+  display: flex;
+}
+
+.card {
+  padding: 2rem;
+  display: flex;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  align-self: stretch;
+}
+
+.imgWrapper {
+  border: var(--border);
+  border-color: #616163;
+  border-radius: 50%;
+  width: fit-content;
+  background-color: var(--bg);
+  overflow: hidden;
+  padding: 4px;
+}
+
+.imgWrapper img {
+  width: 46px;
+}
+
+.starsWrapper>* {
+  display: inline-block;
+  margin-inline: 2px;
+}
+
+.name {
+  color: var(--text-clr);
+}
+
+.content {
+  color: #616163;
+}

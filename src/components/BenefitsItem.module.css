@@ -1,0 +1,38 @@
+.card {
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+  background: white;
+}
+
+.imgWapper {
+  width: fit-content;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  background: var(--burger);
+  border: var(--border);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+
+}
+
+.imgWapper img {
+  transition: 300ms ease;
+}
+
+.card:hover img {
+  transform: scale(1.5) rotate(10deg);
+}
+
+.card h3 {
+  font-weight: 500;
+  padding-block: 1rem;
+}
+
+.card p {
+  line-height: 150%;
+  color: #4C4C4D;
+}

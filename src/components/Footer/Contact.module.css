@@ -1,0 +1,21 @@
+.contact>* {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.icon {
+  border: var(--border);
+  border-radius: 6px;
+  padding: 6px;
+
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+}
+
+.icon img {
+  width: 1rem;
+}

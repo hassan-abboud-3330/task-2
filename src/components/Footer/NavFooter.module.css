@@ -1,0 +1,41 @@
+.grid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+
+.box {
+  width: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.box:nth-child(3) {
+  margin-top: 48px;
+}
+
+.box li a {
+  color: #656567;
+  font-weight: bold;
+}
+
+.box li:first-child a {
+  color: #262626;
+  font-weight: bold;
+}
+
+
+/* ==========
+  Responsive
+========== */
+
+@media (min-width:1280px) {
+
+  .box:nth-child(3) {
+    margin-top: 0;
+  }
+
+}

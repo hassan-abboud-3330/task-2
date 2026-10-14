@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+
+/* ==============
+  responsive 
+============== */
+@media (min-width:765px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,126 @@
+.banner {
+  overflow: hidden;
+  border: 2px solid var(--border-clr);
+  border-radius: 8px;
+  background: var(--burger);
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+}
+
+.banner button {
+  background: transparent;
+  border: none;
+}
+
+.banner>div {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.leftShape {
+  background-image: url("../../assets/imgs/mobile-s-l.png");
+  width: 41px;
+  height: 100%;
+  left: 0;
+}
+
+.rightShape {
+  background-image: url("../../assets/imgs/mobile-s-r.png");
+
+  width: 41px;
+  height: 100%;
+  right: 0;
+}
+
+.leftCircle {
+  background-image: url("../../assets/imgs/mobile-c-l.png");
+  width: 33px;
+  height: 22px;
+  left: 8px;
+  top: 0;
+}
+
+.rightCircle {
+  background-image: url("../../assets/imgs/mobile-c-r.png");
+  width: 32px;
+  height: 21px;
+  right: 0;
+  bottom: 0;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* =============
+  RESPONSIVE
+============= */
+@media (min-width: 768px) {
+  .banner {
+    height: 48px;
+  }
+
+  @media (min-width: 1024px) {
+    .banner {
+      height: 58px;
+    }
+
+    .leftShape {
+      background-image: url("../../assets/imgs/lap-s-l.png");
+      width: 171px;
+    }
+
+    .rightShape {
+      background-image: url("../../assets/imgs/lap-s-r.png");
+      width: 180px;
+
+    }
+
+    .leftCircle {
+      background-image: url("../../assets/imgs/lap-c-l.png");
+      width: 51px;
+      height: 26px;
+      left: 25%;
+    }
+
+    .rightCircle {
+      background-image: url("../../assets/imgs/lap-c-r.svg");
+      width: 33px;
+      height: 17px;
+      right: 25%;
+
+    }
+  }
+
+  @media (min-width: 1530px) {
+    .leftShape {
+      background-image: url("../../assets/imgs/desk-s-l.svg");
+      width: 215px;
+    }
+
+    .leftCircle {
+      background-image: url("../../assets/imgs/desktop-c-l.svg");
+      width: 73px;
+      height: 45px;
+
+    }
+
+    .rightCircle {
+      background-image: url("../../assets/imgs/desktop-c-r.svg");
+      width: 40px;
+      height: 29px;
+    }
+
+    .rightShape {
+      background-image: url("../../assets/imgs/desk-s-r.svg");
+      width: 224px;
+    }
+  }
+}

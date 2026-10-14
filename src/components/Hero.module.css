@@ -1,0 +1,118 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.heroImg {
+  width: 100%;
+  min-width: 358px;
+  max-width: 765px;
+  display: flex;
+}
+
+.heroImg img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.texts>span {
+  display: block;
+  position: relative;
+  margin-bottom: 6px;
+  width: fit-content;
+  margin-inline: auto;
+
+  &::before {
+    content: "";
+    background: var(--border-clr);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+  }
+}
+
+.hero h1 {
+  font-family: Raleway;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 40px;
+  line-height: 130%;
+}
+
+.texts h1 span {
+  color: var(--logo);
+}
+
+.stats {
+  width: 100%;
+  padding: 1rem;
+  background: var(--burger);
+}
+
+.stats>* {
+  /* background: red; */
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 1rem;
+}
+
+.stats>*:not(:last-child) {
+  border-bottom: 2px solid var(--border-clr);
+}
+
+.counter {
+  margin-bottom: 6px;
+
+  font-family: Outfit, sans-serif;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 34px;
+  line-height: 150%;
+}
+
+/* ============
+  responsive
+=============*/
+@media (min-width: 1024px) {
+  .hero {
+    margin: 16px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: clamp(46px, 3vw, 60px);
+  }
+
+  .heroImg {
+    flex: 1;
+  }
+
+  .content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .texts>span {
+    margin-left: 0;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .stats>*:not(:last-child) {
+    border-bottom: none;
+  }
+}
